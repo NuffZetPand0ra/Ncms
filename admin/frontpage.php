@@ -1,8 +1,6 @@
 <?php
-	require_once '../../internal/login.php';
-	require_once '../../internal/user_rights/user.php';
-	session_start();
-	$user = $_SESSION['user'];
+	require_once 'admin_functions.php';
+	adminInit();
 ?>
 <article class="module width_full">
 	<header><h3>Welcome <?php echo $user->name; ?></h3></header>
